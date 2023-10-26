@@ -14,8 +14,8 @@ jobs:
       Greeting: Hello
       DAY_OF_WEEK: Tuesday
     steps:
-      - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name. $RUNNER_OS Today is ${{ env.DAY_OF_WEEK}}!"
+      - name: "Say Hello Mona it's Monday"       
         env:
-          First_Name: Mona
+          SUPER_SECRET: ${{ secrets.SuperSecret }}
+        run: echo $SUPER_SECRET  
           
