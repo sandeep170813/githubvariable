@@ -17,5 +17,5 @@ jobs:
       - name: "Say Hello Mona it's Monday"       
         env:
           SUPER_SECRET: ${{ secrets.SuperSecret }}
-        run: echo $SUPER_SECRET  
+        run: echo "$env:SUPER_SECRET"
           
