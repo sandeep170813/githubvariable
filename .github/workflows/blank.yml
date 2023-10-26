@@ -16,6 +16,6 @@ jobs:
     steps:
       - name: "Say Hello Mona it's Monday"       
         env:
-          SUPER_SECRET: ${{ secrets.SuperSecret }}
+          SUPER_SECRET: ${{ secrets.PASSWORD }}
         run: echo "$env:SUPER_SECRET"
           
