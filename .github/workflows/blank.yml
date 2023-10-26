@@ -15,7 +15,7 @@ jobs:
       DAY_OF_WEEK: Tuesday
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name. $RUNNER_NAME Today is ${{ env.DAY_OF_WEEK}}!"
+        run: echo "$Greeting $First_Name. $RUNNER_OS Today is ${{ env.DAY_OF_WEEK}}!"
         env:
           First_Name: Mona
           
